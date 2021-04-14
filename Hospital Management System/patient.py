@@ -1,8 +1,12 @@
+# for GUI 
 from tkinter import *
 from tkinter import ttk
+# for images
 from PIL import Image, ImageTk
-import mysql.connector 
+# for prompt boxes
 from tkinter import messagebox
+# for MySQL Connection and database
+import mysql.connector 
 #pip install pillow 
 # Setting up the database and tables
 mycon = mysql.connector.connect(
@@ -16,25 +20,26 @@ for dbname in cur:
     if ("HOSPITAL" in dbname):
         flag = True
         break
-
 if not flag:
     cur.execute("Create database if not exists HOSPITAL")
     print("database HOSPITAL created")
 else:
     print("database HOSPITAL already exists")   
-
+# creating object con to using .connect method in mysql.connector module
 con = mycon.connect(
     host = "localhost",
     user = "root",
     database = "HOSPITAL"
 )
-
+# Check for connection to the database
 if mycon.is_connected():
+    # connection made
     print("database opened")
 else:
+    # gives error when not connected
     print("error opening database") 
-
-# inserting tables
+    
+# To create table Patient
 t_query1 = """CREATE table if not exists patient(
     Dep varchar(45),
     Past varchar(45), 
@@ -52,6 +57,8 @@ t_query1 = """CREATE table if not exists patient(
     Doctor varchar(45))"""
 cur = mycon.cursor()
 cur.execute(t_query1)
+
+#Class for GUI and functions 
 class Patient:
     def __init__(self,root):
         self.root = root
