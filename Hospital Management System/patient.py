@@ -1,3 +1,4 @@
+'''IMPORTING MODULES'''
 # for GUI 
 from tkinter import *
 from tkinter import ttk
@@ -8,11 +9,14 @@ from tkinter import messagebox
 # for MySQL Connection and database
 import mysql.connector 
 #pip install pillow 
-# Setting up the database and tables
+
+# Setting up the DATABASE and TABLES in MySQL
+# using mysql.connector in python
 mycon = mysql.connector.connect(
-    host = 'localhost',
-    user = 'root'
-)
+                                host = 'localhost',
+                                user = 'root'
+                              )
+# creating cursor object to execute query from python code
 cur = mycon.cursor()
 cur.execute("Show databases;")
 flag = False
@@ -21,16 +25,20 @@ for dbname in cur:
         flag = True
         break
 if not flag:
+    # To create database HOSPITAL if not exists in MySQL
     cur.execute("Create database if not exists HOSPITAL")
     print("database HOSPITAL created")
 else:
     print("database HOSPITAL already exists")   
+    
+# connecting to MySQL database already created "HOSPITAL" 
 # creating object con to using .connect method in mysql.connector module
 con = mycon.connect(
     host = "localhost",
     user = "root",
     database = "HOSPITAL"
 )
+
 # Check for connection to the database
 if mycon.is_connected():
     # connection made
@@ -40,6 +48,7 @@ else:
     print("error opening database") 
     
 # To create table Patient
+# Executing query from python to create tables to store patient info.
 t_query1 = """CREATE table if not exists patient(
     Dep varchar(45),
     Past varchar(45), 
@@ -58,7 +67,7 @@ t_query1 = """CREATE table if not exists patient(
 cur = mycon.cursor()
 cur.execute(t_query1)
 
-#Class for GUI and functions 
+# Class for GUI and Patient Data Mangement and access 
 class Patient:
     def __init__(self,root):
         self.root = root
@@ -81,6 +90,7 @@ class Patient:
         self.var_doctor = StringVar()
 
         #Fecthing the images
+        # Adding images to GUI
         # 1st iimage
         img = Image.open(r"C:\Users\thicc\Desktop\Python\Work\Learn\Hospital Mangement\Hospital images\1st.jpg")
         img = img.resize((480,120), Image.ANTIALIAS)
@@ -91,7 +101,7 @@ class Patient:
         self.btn_1.place(x = 0, y = 0, width = 480, height = 120)
 
         # 2nd image
-        img_2 = Image.open(r"C:\Users\thicc\Desktop\Python\Work\Learn\Hospital Mangement\Hospital images\6th.jpg")
+        img_2 = Image.open(r"C:\Users\thicc\Desktop\Python\Work\Learn\Hospital Mangement\Hospital images\Turing.jpg")
         img_2 = img_2.resize((480,120), Image.ANTIALIAS)
         self.photoimg_2 = ImageTk.PhotoImage(img_2)
         
@@ -167,16 +177,16 @@ class Patient:
         com_txt_current_room.current(0)
         com_txt_current_room.grid(row = 1, column = 1, sticky = W, padx = 2)
 
-        # Hospital Floor of operation
+        # Hospital Floor alloted tot the patient
         label_Floor = Label(std_lbl_info_frame, font = ('arial', 10, 'bold'),text = "Hospital Floor :", bg = "white")
         label_Floor.grid(row = 1, column = 2, sticky = W, padx = 2, pady = 10)
         comFloor = ttk.Combobox(std_lbl_info_frame, textvariable = self.var_floor, font = ('arial', 10, 'bold'), width = 17, state = "readonly")
-
+        
         comFloor["value"] = ("Select Floor", "Floor-1", "Floor-2", "Floor-3", "Floor-4")
         comFloor.current(0)
         comFloor.grid(row = 1, column = 3, sticky = W, padx = 2, pady =10)
 
-        # Patient Class Frame information
+        # Patient info display Frame
         std_lbl_class_frame = LabelFrame(DataLeftFrame, bd = 4, relief = RIDGE, padx = 2, text = " Patient Frame information", font = ('times new roman', 12, 'bold'), fg = "red", bg = "white")
         std_lbl_class_frame.place(x = 0, y = 235, width  = 650, height = 200)
         
@@ -204,7 +214,7 @@ class Patient:
         com_txt_div.current(0)
         com_txt_div.grid(row = 1, column = 1, sticky = W, padx = 2, pady =7)
 
-        # Patient No/ Roll no.
+        # Patient No.
         lbl_roll = Label( std_lbl_class_frame, font = ('arial', 10, 'bold'),text = "Patient No : ", bg = "white")
         lbl_roll.grid(row = 1, column = 2, sticky = W, padx = 2, pady = 7)
 
@@ -271,12 +281,11 @@ class Patient:
         btn_reset = Button(btn_frame, text = "Reset", command = self.reset_data, font = ('arial', 10, 'bold'), width = 17, bg = 'blue', fg = 'white')
         btn_reset.grid(row =0, column = 3, padx =1)
 
-        
+       
         # Right frame
         DataRightFrame = LabelFrame(Management_frame, bd = 4, relief = RIDGE, padx = 2, text = "Patient Information ", font = ('times new roman', 12, 'bold'), fg = "red", bg = "white")
         DataRightFrame.place(x = 650, y = 10, width  = 650, height = 540)
         
-
         # Right frame picture
         img_6= Image.open(r"C:\Users\thicc\Desktop\Python\Work\Learn\Hospital Mangement\Hospital images\6th.jpg")
         img_6 = img.resize((630,200), Image.ANTIALIAS)
@@ -294,7 +303,7 @@ class Patient:
         search_by = Label(Search_Frame, font = ('arial', 10, 'bold'),text = "Search By:", fg = 'red',bg = "black")
         search_by.grid(row = 0, column = 0, sticky = W, padx = 2)
         
-        # Search
+        # Search Data from the GUI
         self.var_com_search = StringVar()
         com_txt_search = ttk.Combobox(Search_Frame, textvariable=self.var_com_search , font = ('arial', 10, 'bold'), width = 18, state = "readonly")
         com_txt_search['value'] = ("Select Option", "Patient No", "Phone" ,"Patient ID")
@@ -361,7 +370,7 @@ class Patient:
         self.fetch_data()
 
 
-    # Adding Data
+    # Adding Data from the GUI
     def add_data(self):
         if (self.var_dep.get() == "" or self.var_email.get == "" or self.var_patient_id.get() == ""):
             messagebox.showerror("Error", "All Fields are required")
@@ -369,10 +378,10 @@ class Patient:
         else:
             try:
                 conn = mysql.connector.connect(
-                    host = "localhost",
-                    user = "root",
-                    database = "HOSPITAL" 
-                )
+                                                host = "localhost",
+                                                user = "root",
+                                                database = "HOSPITAL" 
+                                            )
                 my_cursur = conn.cursor()
                 my_cursur.execute("insert into Patient values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(
                                                                                                             self.var_dep.get(),
@@ -393,13 +402,14 @@ class Patient:
                 conn.commit()
                 self.fetch_data()
                 conn.close()
+                # to show POPUP message when the function is executed
                 messagebox.showinfo("Success", "Patient has been added", parent = self.root)
 
             except Exception as es:
                 messagebox.showerror("Error", f"Due To: {str(es)}", parent = self.root)
 
 
-    # Fetch data from the Database
+    # Fetch Patient DATA from the Database Hospital and Table Patient
     def fetch_data(self):
         conn = mysql.connector.connect(
                     host = "localhost",
@@ -417,7 +427,7 @@ class Patient:
         conn.close()
 
 
-    # show data in GUI 
+    # To Display/Show data in the GUI
     def get_cursor(self, event = ""):
             cursor_row = self.patient_table.focus()
             content = self.patient_table.item(cursor_row)
@@ -438,7 +448,7 @@ class Patient:
             self.var_doctor.set(data[13])
 
 
-    # Update data 
+    # Update DATA from the GUI
     def update_data(self):
         if (self.var_dep.get() == "" or self.var_email.get == "" or self.var_patient_id.get() == ""):
                 messagebox.showerror("Error", "All Fields are required")
@@ -474,7 +484,8 @@ class Patient:
                 conn.commit()
                 self.fetch_data()
                 conn.close()
-
+                
+                # to show POPUP message when the function is executed
                 messagebox.showinfo("Success", "Updated!", parent = self.root)
 
             except Exception as es:
@@ -505,13 +516,15 @@ class Patient:
                     conn.commit()
                     self.fetch_data()
                     conn.close()
+                    
+                     # to show POPUP message when the function is executed
                     messagebox.showinfo("Delete", "Your Patient has been deleted!", parent = self.root)
                 except Exception as es:
                     messagebox.showerror("Error", f"Due To: {str(es)}", parent = self.root)
 
 
                 
-    # Reset
+    # Reset data display in GUI
     def reset_data(self):
         self.var_dep.set("Select Department"),
         self.var_past.set("Select Past Healt"),
@@ -528,7 +541,8 @@ class Patient:
         self.var_address.set(""),
         self.var_doctor.set("")
 
-    # Search Data
+         
+    # Search Data from the GUI
     def search_data(self):
             if self.var_con_search.get()=="" or self.var_search.get() == "":
                 messagebox.showerror("Error", "Please Select option", parent =self.root)
@@ -551,7 +565,7 @@ class Patient:
                 except Exception as es:
                     messagebox.showerror("Error", f"Due To: {str(es)}", parent = self.root)
  
-
+# __main__
 if __name__ == "__main__":
     root = Tk()
     obj = Patient(root)
