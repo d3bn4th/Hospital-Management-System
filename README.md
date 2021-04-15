@@ -1,7 +1,6 @@
 # Hospital-Management-System
 (1.)	INTRODUCTION TO THE PROJECT
 Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. 
-HMS came into the picture of hospital management as early as 1960 and have ever since been evolving and synchronizing with the technologies while modernizing healthcare facilities.
 
 •	Maintain the medical records of the patient  
 •	Maintain the contact details of the patient
@@ -15,12 +14,16 @@ The advantages of HMS can be pinpointed to the following:
 •	Easy access to patient data with correct patient history
 •	Improved patient care made possible
 
-
 Hospital Management System in Python
 The hospital management system in python which we are going to build will look something like this:
  
 Project Prerequisites
+Here I am using the MySQL relation databases for the Data management of the Patients.
+I am using MySQL with Python, for this project.
+Python = Front End
+MySQL = BackEnd
 tkinter – Please run below command to install tkinter
+https://docs.python.org/3/library/tkinter.html
 pip install tkinter
 pillow – Please run below command to install tkinter
 pip install pillow
@@ -46,9 +49,9 @@ This program consists of 6 options:
 •	Exit 
 This is CRUD(Create, Read, Update, Delete) application.
 Here I am using the Mysql databases for the data management.
-(2.)	Mysql tables used and their structure
+Mysql tables used and their structure
 DATABASE
 Here I am using the MySQL relation databases for the Data management of the Patients.
- I am using MySQL with Python, for this project.
+I am using MySQL with Python, for this project.
 Python = Front End
 MySQL = BackEnd
