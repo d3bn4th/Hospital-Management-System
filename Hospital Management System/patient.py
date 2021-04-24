@@ -1,5 +1,3 @@
-'''IMPORTING MODULES'''
-# for GUI 
 from tkinter import *
 from tkinter import ttk
 # for images
