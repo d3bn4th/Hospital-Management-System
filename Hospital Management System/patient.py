@@ -12,7 +12,8 @@ import mysql.connector
 # using mysql.connector in python
 mycon = mysql.connector.connect(
                                 host = 'localhost',
-                                user = 'root'
+                                user = 'root',
+                                database = 'HOSPITAL'
                               )
 # creating cursor object to execute query from python code
 cur = mycon.cursor()
