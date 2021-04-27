@@ -1,19 +1,17 @@
 from tkinter import *
 from tkinter import ttk
-# for images
 from PIL import Image, ImageTk
-# for prompt boxes
 from tkinter import messagebox
+
+# For Data Management
 # for MySQL Connection and database
 import mysql.connector 
-#pip install pillow 
 
 # Setting up the DATABASE and TABLES in MySQL
 # using mysql.connector in python
 mycon = mysql.connector.connect(
                                 host = 'localhost',
-                                user = 'root',
-                                database = 'Name'
+                                user = 'root'
                               )
 # creating cursor object to execute query from python code
 cur = mycon.cursor()
