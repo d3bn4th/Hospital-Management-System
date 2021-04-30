@@ -47,6 +47,6 @@ Here I am using the Mysql databases for the data management.
 Mysql tables used and their structure
 # DATABASE
 Here I am using the MySQL relation databases for the Data management of the Patients.
-I am using MySQL with Python, for this project.
+I am using MySQL with Python, for this project. \
 Python = Front End \
 MySQL = BackEnd \
