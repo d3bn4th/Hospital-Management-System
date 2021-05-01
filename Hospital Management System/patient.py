@@ -2,8 +2,6 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 from tkinter import messagebox
-
-# For Data Management
 # for MySQL Connection and database
 import mysql.connector 
 
@@ -15,7 +13,7 @@ mycon = mysql.connector.connect(
                               )
 # creating cursor object to execute query from python code
 cur = mycon.cursor()
-cur.execute("Show databases;")
+cur.execute("show databases;")
 flag = False
 for dbname in cur:
     if ("HOSPITAL" in dbname):
