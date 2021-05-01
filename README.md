@@ -41,13 +41,13 @@ This program consists of 6 options: \
 •	Reset the Reacords \
 •	Delete the records \
 •	Display all the records \
-•	Exit \
-#### This is CRUD(Create, Read, Update, Delete) application. \
+•	Exit 
+#### This is CRUD(Create, Read, Update, Delete) application. 
 Here I am using the Mysql databases for the data management.
 Mysql tables used and their structure
 
 ## DATABASE
-Here I am using the MySQL relation databases for the Data management of the Patients.
-I am using MySQL with Python, for this project. \
-Python = Front End \
-MySQL = BackEnd 
+Here I am using the MySQL relation databases for the Data management of the Patients. \
+I am using MySQL with Python, for this project. 
+#### Python = Front End 
+#### MySQL = BackEnd 
