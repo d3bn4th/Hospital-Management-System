@@ -1,12 +1,12 @@
 # Hospital-Management-System
 INTRODUCTION TO THE PROJECT
-Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively.\ 
+Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. \ 
 
 •	Maintain the medical records of the patient \
 •	Maintain the contact details. \
-•	Keep track of the appointment dates \
+•	Keep track of the appointment dates 
 
-The advantages of HMS can be pinpointed to the following:
+The advantages of HMS can be pinpointed to the following: \
 •	Time-saving Technology
 •	Improved Efficiency by avoiding human errors
 •	Reduces scope for Error
