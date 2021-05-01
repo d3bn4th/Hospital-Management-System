@@ -42,7 +42,7 @@ This program consists of 6 options: \
 •	Delete the records \
 •	Display all the records \
 •	Exit \
-This is CRUD(Create, Read, Update, Delete) application.
+#### This is CRUD(Create, Read, Update, Delete) application. \
 Here I am using the Mysql databases for the data management.
 Mysql tables used and their structure
 
