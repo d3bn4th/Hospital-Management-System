@@ -1,4 +1,5 @@
 # Hospital-Management-System
+
 ### INTRODUCTION TO THE PROJECT 
 Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. 
 
@@ -34,7 +35,7 @@ Below are the project files you will get once you download and extract the HMS p
 •	patient.py– which does function call to all other python files \
 •	Hospital images – Hospital images for the UI
 
-## WORKING DISCRIPTION
+### WORKING DISCRIPTION
 This program consists of 6 options: \
 •	Add record of the patients \
 •	Update records \
@@ -42,11 +43,11 @@ This program consists of 6 options: \
 •	Delete the records \
 •	Display all the records \
 •	Exit 
-#### This is CRUD(Create, Read, Update, Delete) application. 
+##### This is CRUD(Create, Read, Update, Delete) application. 
 Here I am using the Mysql databases for the data management.
 Mysql tables used and their structure
 
-## DATABASE
+### DATABASE
 Here I am using the MySQL relation databases for the Data management of the Patients. \
 I am using MySQL with Python, for this project. 
 #### Python = Front End 
