@@ -34,15 +34,15 @@ Below are the project files you will get once you download and extract the HMS p
 •	Hospital images – Hospital images for the UI
 
 ### WORKING DISCRIPTION
-This program consists of 6 options: \
+##### This program consists of 6 options:
 •	Add record of the patients \
 •	Update records \
 •	Reset the Reacords \
 •	Delete the records \
 •	Display all the records \
 •	Exit 
-##### This is CRUD(Create, Read, Update, Delete) application. 
-Here I am using the Mysql databases for the data management.
+#### This is CRUD(Create, Read, Update, Delete) application. 
+Here I am using the Mysql databases for the data management. \
 Mysql tables used and their structure
 
 ### DATABASE
