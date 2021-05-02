@@ -50,7 +50,12 @@ Mysql tables used and their structure
 
 
 ### DATABASE
-Here I am using the MySQL relation databases for the Data management of the Patients. \
-##### I am using MySQL with Python, for this project. 
+Here I am using the MySQL relation databases for the Data management of the Patients.
+I am using MySQL with Python, for this project.
+#### Why MySQL?
+Many of the world's largest and fastest-growing organizations including Facebook, Google, Adobe, Alcatel Lucent and Zappos rely on MySQL to save time and money powering their high-volume Web sites, business-critical systems and packaged software.
+
+
+Below you will find valuable resources including case studies and white papers that will help you implement cost-effective database solutions using MySQL.
 #### Python = Front End 
 #### MySQL = BackEnd 
