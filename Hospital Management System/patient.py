@@ -36,10 +36,10 @@ con = mycon.connect(
 
 # Check for connection to the database
 if mycon.is_connected():
-    # connection made
+    # CONNECTION MADE
     print("database opened")
 else:
-    # gives error when not connected
+    # Error when not connected
     print("error opening database") 
     
 # To create table Patient
