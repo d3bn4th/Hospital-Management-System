@@ -13,7 +13,7 @@ mycon = mysql.connector.connect(
                               )
 # creating cursor object to execute query from python code
 cur = mycon.cursor()
-cur.execute("show databases;")
+cur.execute("Show databases;")
 flag = False
 for dbname in cur:
     if ("HOSPITAL" in dbname):
@@ -26,7 +26,7 @@ if not flag:
 else:
     print("database HOSPITAL already exists")   
     
-# connecting to MySQL database already created "HOSPITAL" 
+# Connecting to MySQL database already created "HOSPITAL" 
 # creating object con to using .connect method in mysql.connector module
 con = mycon.connect(
     host = "localhost",
