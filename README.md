@@ -1,6 +1,6 @@
 # Hospital-Management-System
 
-## INTRODUCTION TO THE PROJECT 
+## Introduction to the Project
 
 Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. 
 •	Maintain the medical records of the patient \
@@ -27,14 +27,17 @@ pip install tkinter \
 pillow – Please run below command to install tkinter  pip install pillow \
 pymysql – Please run below command to install tkinter pip install pymysql
 
-#### Note: You are required to have MySQL server installed on your system in order to make pymysql work. If you do not have it ready, please download from MySQL Official website
+#### Note:
+#### You are required to have MySQL server installed on your system in order to make pymysql work. If you do not have it ready, please download from MySQL Official website
 
 ### DESCRIPTION OF PROJECT FILES
 Below are the project files you will get once you download and extract the HMS project: \
 •	patient.py– which does function call to all other python files \
 •	Hospital images – Hospital images for the UI
 
+
 ### WORKING DISCRIPTION
+
 ##### This program consists of 6 options:
 •	Add record of the patients \
 •	Update records \
