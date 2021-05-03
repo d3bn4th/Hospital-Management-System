@@ -27,8 +27,7 @@ pip install tkinter \
 pillow – Please run below command to install tkinter  pip install pillow \
 pymysql – Please run below command to install tkinter pip install pymysql
 
-#### Note:
-#### You are required to have MySQL server installed on your system in order to make pymysql work. If you do not have it ready, please download from MySQL Official website
+#### Note:You are required to have MySQL server installed on your system in order to make pymysql work. If you do not have it ready, please download from MySQL Official website
 
 ### DESCRIPTION OF PROJECT FILES
 Below are the project files you will get once you download and extract the HMS project: \
