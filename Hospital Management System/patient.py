@@ -84,14 +84,14 @@ class Patient:
         self.var_address = StringVar()
         self.var_doctor = StringVar()
 
-        #Fecthing the images
+        # Fecthing the images
         # Adding images to GUI
         # 1st iimage
         img = Image.open(r"C:\Users\thicc\Desktop\Python\Work\Learn\Hospital Mangement\Hospital images\1st.jpg")
         img = img.resize((480,120), Image.ANTIALIAS)
         self.photoimg = ImageTk.PhotoImage(img)
         
-        # to diaplay the images
+        # To diaplay the images
         self.btn_1 = Button(self.root, image = self.photoimg, cursor = "hand2")
         self.btn_1.place(x = 0, y = 0, width = 480, height = 120)
 
@@ -100,7 +100,7 @@ class Patient:
         img_2 = img_2.resize((480,120), Image.ANTIALIAS)
         self.photoimg_2 = ImageTk.PhotoImage(img_2)
         
-        # to diaplay the images
+        # To diaplay the images
         self.btn_2 = Button(self.root, image = self.photoimg_2, cursor = "hand2")
         self.btn_2.place(x = 480, y = 0, width = 480, height = 120)
 
@@ -109,12 +109,12 @@ class Patient:
         img_3 = img_3.resize((480,120), Image.ANTIALIAS)
         self.photoimg_3 = ImageTk.PhotoImage(img_3)
         
-        # to diaplay the images
+        # To diaplay the images
         self.btn_3 = Button(self.root, image = self.photoimg_3, cursor = "hand2")
         self.btn_3.place(x = 960, y = 0, width = 480, height = 120)
 
 
-        #backgroud Image for the program
+        # Backgroud Image for the program
         img_4 = Image.open(r"C:\Users\thicc\Desktop\Python\Work\Learn\Hospital Mangement\Hospital images\hospital.jpg")
         img_4 = img_4.resize((1366,695), Image.ANTIALIAS)
         self.photoimg_4 = ImageTk.PhotoImage(img_4)
@@ -517,8 +517,7 @@ class Patient:
                 except Exception as es:
                     messagebox.showerror("Error", f"Due To: {str(es)}", parent = self.root)
 
-
-                
+            
     # Reset data display in GUI
     def reset_data(self):
         self.var_dep.set("Select Department"),
@@ -559,7 +558,8 @@ class Patient:
                     conn.close()
                 except Exception as es:
                     messagebox.showerror("Error", f"Due To: {str(es)}", parent = self.root)
- 
+
+                    
 # __main__
 if __name__ == "__main__":
     root = Tk()
