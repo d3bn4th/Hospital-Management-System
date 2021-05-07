@@ -8,8 +8,6 @@ Hospital management system is a computer system that helps manage the informatio
 *	Maintain the contact details. 
 *	Keep track of the appointment dates 
 
-![alt text](https://existek.com/wp-content/uploads/2019/05/hospital-management-system-post-cover-image.jpg)
-
 
 #### The advantages of HMS can be pinpointed to the following: 
 *	Time-saving Technology \
@@ -50,7 +48,8 @@ Below are the project files you will get once you download and extract the HMS p
 •	Exit 
 
 
-#### This is CRUD(Create, Read, Update, Delete) application. 
+#### This is CRUD(Create, Read, Update, Delete) application.
+![alt text](https://www.dorusomcutean.com/wp-content/uploads/2020/03/crud.jpg)
 Here I am using the Mysql databases for the data management. \
 Mysql tables used and their structure
 
