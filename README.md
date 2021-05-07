@@ -7,6 +7,8 @@ Hospital management system is a computer system that helps manage the informatio
 *	Maintain the contact details. 
 *	Keep track of the appointment dates 
 
+![alt text](https://existek.com/wp-content/uploads/2019/05/hospital-management-system-post-cover-image.jpg)
+
 
 #### The advantages of HMS can be pinpointed to the following: 
 *	Time-saving Technology \
