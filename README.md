@@ -1,4 +1,5 @@
 # Hospital-Management-System
+![alt text](https://existek.com/wp-content/uploads/2019/05/hospital-management-system-post-cover-image.jpg)
 
 ## Introduction to the Project
 
