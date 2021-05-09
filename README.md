@@ -12,10 +12,10 @@ Hospital management system is a computer system that helps manage the informatio
 #### The advantages of HMS can be pinpointed to the following: 
 *	Time-saving Technology \
 *	Improved Efficiency by avoiding human errors \
-•	Reduces scope for Error \
-•	Cost effective and easily manageable \
-•	Easy access to patient data with correct patient history \
-•	Improved patient care made possible 
+*	Reduces scope for Error \
+*	Cost effective and easily manageable \
+*	Easy access to patient data with correct patient history \
+*	Improved patient care made possible 
 
 
 ### PROJECT PREREQUISITES
