@@ -33,19 +33,19 @@ You are required to have MySQL server installed on your system in order to make 
 
 ### DESCRIPTION OF PROJECT FILES
 Below are the project files you will get once you download and extract the HMS project: \
-•	patient.py– which does function call to all other python files \
-•	Hospital images – Hospital images for the UI
+*	patient.py– which does function call to all other python files 
+*	Hospital images – Hospital images for the UI
 
 
 ### WORKING DISCRIPTION
 
-##### This program consists of 6 options:
-•	Add record of the patients \
-•	Update records \
-•	Reset the Reacords \
-•	Delete the records \
-•	Display all the records \
-•	Exit 
+#### This program consists of 6 options:
+*	Add record of the patients 
+*	Update records 
+*	Reset the Reacords 
+*	Delete the records 
+*	Display all the records 
+*	Exit 
 
 
 ## This is CRUD(Create, Read, Update, Delete) application.
