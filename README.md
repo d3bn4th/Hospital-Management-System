@@ -21,8 +21,8 @@ Hospital management system is a computer system that helps manage the informatio
 ### PROJECT PREREQUISITES
 Here I am using the MySQL relation databases for the Data management of the Patients. \
 I am using MySQL with Python, for this project. \
-#### Python = Front End 
-#### MySQL = BackEnd
+#### :snake: Python = Front End 
+#### :bar_chart: MySQL = BackEnd
 tkinter – Please run below command to install tkinter ---> https://docs.python.org/3/library/tkinter.html \
 pip install tkinter \
 pillow – Please run below command to install tkinter  pip install pillow \
