@@ -4,7 +4,7 @@
 ## Introduction to the Project
 
 Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. 
-*	Maintain the medical records of the patient 
+*	Maintain the medical records of the patient.
 *	Maintain the contact details. 
 *	Keep track of the appointment dates 
 
