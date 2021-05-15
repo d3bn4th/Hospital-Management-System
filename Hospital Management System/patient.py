@@ -22,9 +22,9 @@ for dbname in cur:
 if not flag:
     # To create database HOSPITAL if not exists in MySQL
     cur.execute("Create database if not exists HOSPITAL")
-    print("database HOSPITAL created")
+    print("database HOSPITAL created!")
 else:
-    print("database HOSPITAL already exists")   
+    print("database HOSPITAL already exists.")   
     
 # Connecting to MySQL database already created "HOSPITAL" 
 # creating object con to using .connect method in mysql.connector module
