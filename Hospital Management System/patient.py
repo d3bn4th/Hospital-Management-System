@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 from tkinter import messagebox
-# for MySQL Connection and database
 import mysql.connector 
 
 # Setting up the DATABASE and TABLES in MySQL
