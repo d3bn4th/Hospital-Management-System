@@ -40,7 +40,7 @@ Below are the project files you will get once you download and extract the HMS p
 
 #### This program consists of 6 options:
 *	Add record of the patients 
-*	Update records 
+*	Update records.
 *	Reset the Reacords 
 *	Delete the records 
 *	Display all the records 
