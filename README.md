@@ -1,7 +1,7 @@
 # :hospital: Hospital-Management-System
 ![alt text](https://existek.com/wp-content/uploads/2019/05/hospital-management-system-post-cover-image.jpg)
 
-## Introduction to the Project
+## Introduction to the Project.
 
 Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. 
 *	Maintain the medical records of the patient.
