@@ -14,7 +14,7 @@ Hospital management system is a computer system that helps manage the informatio
 *	Reduces scope for Error.
 *	Cost effective and easily manageable.
 *	Easy access to patient data with correct patient history
-*	Improved patient care made possible .
+*	Improved patient care made possible.
 
 
 ### PROJECT PREREQUISITES
