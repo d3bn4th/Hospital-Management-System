@@ -5,7 +5,7 @@ from tkinter import messagebox
 import mysql.connector 
 
 # Setting up the DATABASE and TABLES in MySQL
-# using mysql.connector in python
+# using mysql.connector 
 mycon = mysql.connector.connect(
                                 host = 'localhost',
                                 user = 'root'
